@@ -15,8 +15,8 @@ When(/^I login$/, async () => {
     await LoginAsana.login("ui.automation2021@gmail.com", "Automation1234");
 });
 
-Then(/^I should be logged in (\w+) page$/, async (page) => {
-    await expect(HomePage.verifyIfPageIsLoaded).toHaveTextContaining(page);
+Then(/^I should be logged in (\w+) page$/, async (pageName) => {
+    await expect(HomePage.pageName).toHaveTextContaining(pageName);
 })
 
 
