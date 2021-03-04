@@ -19,4 +19,7 @@ Then(/^I should be logged in (\w+) page$/, async (pageName) => {
     await expect(HomePage.pageName).toHaveTextContaining(pageName);
 })
 
-
+Given(/^I loged in Asana page$/, async () => { 
+    await pages["login"].open();
+    await LoginAsana.login("ui.automation2021@gmail.com", "Automation1234")
+})

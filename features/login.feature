@@ -2,10 +2,10 @@ Feature: Login
 
     Login feature
 
-    Scenario: Login
-    Given I open Asana login page
-    When I login
-    Then I should be logged in Home page
+    # Scenario: Login
+    # Given I open Asana login page
+    # When I login
+    # Then I should be logged in Home page
 
 
 
